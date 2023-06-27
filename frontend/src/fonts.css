@@ -1,0 +1,5 @@
+@font-face {
+    font-family: Caveat;
+    src: local('CaveatRegular'),
+        url('./fonts\\caveat\\Caveat-Regular.ttf')format('ttf');
+}
