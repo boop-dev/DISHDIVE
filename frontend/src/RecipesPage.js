@@ -9,7 +9,7 @@ export default function RecipesPage () {
         <>
             <DDAppBar props={{bgColor: 'black'}} />
             <Container>
-                <Recipe props={{title: 'Mac and Cheese'}} />   
+                <Recipe props={{title: 'vegan'}} />   
             </Container>
         </>
     )

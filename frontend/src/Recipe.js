@@ -3,13 +3,13 @@ import { Typography } from "@mui/material";
 import axios from 'axios';
 
 async function fetchData(title) {
-  // Your implementation of the `test` function here...
   let returnArr = [];
   const options = {
     method: 'GET',
     url: 'https://recipe-by-api-ninjas.p.rapidapi.com/v1/recipe',
     params: {
-      query: title
+      query: title,
+      offset: '99'
     },
     headers: {
       'X-RapidAPI-Key': 'e149f8f771msh13670b981967600p15bfa1jsna7a96a2a1df7',

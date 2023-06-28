@@ -28,7 +28,7 @@ function Home() {
               fontWeight: '400',
             }}>
             Get your hands on a vast collection of recipes from around the globe
-            ranging from quick and easy meals to gourmet delights...
+            ranging from quick and easy meals to gourmet delights.
           </Typography>
           <div className='overlay'></div>
           </Box>
