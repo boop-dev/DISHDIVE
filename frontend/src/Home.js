@@ -1,8 +1,13 @@
 import './App.css';
-import { Box, Container, Typography } from '@mui/material';
+import { Box, Container, Typography, Grid } from '@mui/material';
 import DDAppBar from './DDAppBar';
 import Footer from './Footer';
-// import RecipeCard from './RecipeCard';
+import RecipeCard from './RecipeCard';
+
+// consts
+const recipeCategories = ["Vegan", "Gluten-free", "Desserts", "Keto", "Mediteranean", "Low-carb", "Pescatarian", "Vegetarian"]
+
+
 
 function Home() {
   return (
@@ -41,13 +46,22 @@ function Home() {
           <Typography  variant='h4'
             sx={{
               textAlign: 'center',
-              marginTop: '30px',
+              marginBottom: '50px',
               fontFamily: 'Josefin Sans',
               fontWeight: '400',
+              fontSize: '300%'
             }}>
-            Try out our latest recipes
+            Checkout these categories
           </Typography>
-          {/* <RecipeCard /> */}
+          <br />
+          <br />
+          <Grid container spacing={3}>
+                    {recipeCategories.map((category) => (
+                        <Grid item xs={3} className='griditem'>
+                            <RecipeCard props={{title: category.toUpperCase(), imageUrl: 'images/' + category + '.jpg' }}/>
+                        </Grid>
+                    ))}
+                </Grid>
         </Container>
       </Box>
 

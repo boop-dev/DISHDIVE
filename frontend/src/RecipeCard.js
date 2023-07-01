@@ -1,17 +1,20 @@
-import { Typography } from '@mui/material';
+import { Typography, Card } from '@mui/material';
 import React from 'react';
+import "./App.css"
 
-const RecipeCard = ({ title, imageUrl }) => {
+const RecipeCard = ({ props }) => {
   return (
-    <Box>
-      <img src={imageUrl} alt="recipe" />
+    <Card className='recipecard' elevation={0} sx={{backgroundColor: 'transparent'}}>
+      <img src={props.imageUrl} alt={props.title} className='recipeimage' />
       <Typography component='h4' variant='h5' paragraph
         sx={{
-            fontFamily: 'Josefin Sans'
+            fontFamily: 'Raleway',
+            fontSize: '15%',
+            color: 'black'
         }}>
-        {title}
+        {props.title}
       </Typography>
-    </Box>
+    </Card>
   );
 };
 

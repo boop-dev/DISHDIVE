@@ -9,7 +9,8 @@ async function fetchData(title) {
     url: 'https://recipe-by-api-ninjas.p.rapidapi.com/v1/recipe',
     params: {
       query: title,
-      offset: '99'
+      offset: '99',
+      limit: '99'
     },
     headers: {
       'X-RapidAPI-Key': 'e149f8f771msh13670b981967600p15bfa1jsna7a96a2a1df7',
