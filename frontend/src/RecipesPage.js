@@ -3,9 +3,9 @@ import DDAppBar from './DDAppBar';
 import { Container } from '@mui/material';
 import './App.css';
 import Recipe from './Recipe';
-import Grid from '@mui/material/Grid';
+// import Grid from '@mui/material/Grid';
 import Footer from './Footer';
-import RecipeCard from './RecipeCard';
+// import RecipeCard from './RecipeCard';
 
 
 export default function RecipesPage () {

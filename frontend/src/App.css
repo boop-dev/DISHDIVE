@@ -8,7 +8,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  padding-top: 50px;
+  padding-top: 70px;
   color: black;
   aspect-ratio: 1400/560;
 }
@@ -63,7 +63,6 @@
 }
 
 .griditem{
-  font-family: 'Josefin Sans';
   font-size: 200px;
   align-items: center;
 }
@@ -76,9 +75,30 @@
   margin-right: auto;
   margin-bottom: 25px;
   display: block;
-  border-radius: 56%;
+  border-radius: 50%;
 }
 
 .recipecard{
   text-align:  center;
+}
+
+.custom-shape-divider-top-1688251488 {
+  position: absolute;
+  /* top: 0; */
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-top-1688251488 svg {
+  position: relative;
+  display: block;
+  width: calc(142% + 1.3px);
+  height: 13vh;
+  rotate: 180deg;
+}
+
+.custom-shape-divider-top-1688251488 .shape-fill {
+  fill: #425F57;
 }
