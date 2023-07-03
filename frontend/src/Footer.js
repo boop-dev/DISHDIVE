@@ -1,5 +1,5 @@
 import './App.css';
-import { Container, Grid, Typography, Box } from '@mui/material';
+import { Container, Grid, Typography, Box, Button } from '@mui/material';
 
 const Footer = () => {
   // Define the data for the footer
@@ -47,13 +47,15 @@ const Footer = () => {
                 <Grid item xs={6}>
                 {column.map((columnItem) => (
                   <Grid item xs={12} sx={{padding: '0px 20px 20px 20px'}}>
-                    <Typography component='subtitle1'
-                      sx={{
-                        color: 'white',
-                        fontFamily: 'Raleway'
-                      }}>
-                      {columnItem.toUpperCase()}
-                    </Typography>
+                      <Button variant='text'>
+                        <Typography component='subtitle1'
+                          sx={{
+                            color: 'white',
+                            fontFamily: 'Raleway'
+                          }}>
+                          {columnItem.toUpperCase()}
+                        </Typography>
+                      </Button>
                   </Grid>
                 ))}
               </Grid>

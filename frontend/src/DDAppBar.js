@@ -39,11 +39,11 @@ function DDAppBar({props}) {
     <AppBar position="static" sx={{
         backgroundColor: props.bgColor,
         boxShadow: "none",
-        top: '0px'
+        top: '0px',
+        position: 'sticky'
     }}>
-      <Container maxWidth="xl">
+      <Container maxWidth="xl" sx={{marginTop: '7px', marginBottom: '7px'}}>
         <Toolbar disableGutters>
-          <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
           <Typography
             variant="h6"
             noWrap
@@ -52,8 +52,8 @@ function DDAppBar({props}) {
             sx={{
               mr: 2,
               display: { xs: 'none', md: 'flex' },
-              fontFamily: 'monospace',
-              fontWeight: 700,
+              fontFamily: 'Raleway',
+              fontWeight: 400,
               letterSpacing: '.3rem',
               color: 'inherit',
               textDecoration: 'none',
@@ -93,7 +93,7 @@ function DDAppBar({props}) {
             >
               {pages.map((page) => (
                 <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">{page}</Typography>
+                  <Typography textAlign="center" >{page}</Typography>
                 </MenuItem>
               ))}
             </Menu>

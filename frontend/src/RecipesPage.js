@@ -12,7 +12,7 @@ export default function RecipesPage () {
 
     return(
         <>
-            <DDAppBar props={{bgColor: 'black'}} />
+            <DDAppBar props={{bgColor: '#425F57'}} />
             <br />
             <br />
             <br />
