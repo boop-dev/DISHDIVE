@@ -44,7 +44,7 @@ export default function Recipe({ props }) {
     const fetchRecipes = async () => {
       try {
         const result = await fetchData(props.title);
-        console.log(result); 
+        // console.log(result); 
         setRecipes(result);
       } catch (error) {
         console.error('Error:', error);

@@ -13,7 +13,7 @@ const Footer = () => {
       sx={{
         backgroundColor: '#425F57',
         marginTop: 10,
-        paddingTop: 10
+        paddingTop: 10,
         }}>
       <Container maxWidth={false} sx={{ maxWidth: '85%'}}>
         <Typography component='h3' variant='h5' 
