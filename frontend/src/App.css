@@ -1,13 +1,22 @@
+/* html{
+  position: sticky;
+  /* background-color: blueviolet; */
+/* } */ */
+
 .topBox{
   display: block;
   position: sticky;
+  margin-top: 0px;
+  padding-top: 0%;
+  background-color: #425F57;
+  z-index: -1;
 }
 
 .middleBox{
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  padding-top: 10%;
+  padding-top: 25vh;
   color: black;
   aspect-ratio: 1400/560;
 }
@@ -58,6 +67,7 @@
 .footer{
   font-family: 'Josefin Sans';
   font-size: 200px;
+  bottom: 0%;
 }
 
 .griditem{

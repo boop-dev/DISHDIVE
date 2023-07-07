@@ -40,6 +40,7 @@ function DDAppBar({props}) {
         backgroundColor: props.bgColor,
         boxShadow: "none",
         top: '0px',
+        marginBottom: '0',
         position: 'sticky'
     }}>
       <Container maxWidth="xl" sx={{marginTop: '7px', marginBottom: '7px'}}>
@@ -119,7 +120,7 @@ function DDAppBar({props}) {
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
             {pages.map((page) => (
-              <Link to={"/" + page}>
+              <Link to={"/" + page} style={{textDecoration: 'none'}}>
                 <Button
                   key={page}
                   onClick={handleCloseNavMenu}

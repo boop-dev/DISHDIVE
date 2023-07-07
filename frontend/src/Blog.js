@@ -6,7 +6,7 @@ import './App.css';
 export default function Blog(){
     return(
         <>
-            <DDAppBar props={{bgColor: 'darkorange'}} />
+            <DDAppBar props={{bgColor: '#425F57'}} />
             <Container>
                 <Typography component='h4' variant='h5' paragraph
                    sx={{

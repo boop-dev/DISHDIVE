@@ -14,8 +14,12 @@ const Footer = () => {
         backgroundColor: '#425F57',
         marginTop: 10,
         paddingTop: 10,
+        // position: 'absolute',
+        bottom: 0,
         }}>
       <Container maxWidth={false} sx={{ maxWidth: '85%'}}>
+
+        {/* logo */}
         <Typography component='h3' variant='h5' 
           sx={{
             color: 'white',
@@ -34,7 +38,8 @@ const Footer = () => {
               sx={{
                 color: 'white',
                 fontFamily: 'Raleway',
-                textAlign: 'justify'
+                textAlign: 'justify',
+                fontSize: '125%'
               }}>
               {description}
             </Typography>

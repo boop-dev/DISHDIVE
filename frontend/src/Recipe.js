@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { Typography } from "@mui/material";
+import { Typography, Card } from "@mui/material";
 import axios from 'axios';
 
 async function fetchData(title) {
@@ -43,8 +43,7 @@ export default function Recipe({ props }) {
   useEffect(() => {
     const fetchRecipes = async () => {
       try {
-        const result = await fetchData(props.title);
-        // console.log(result); 
+        const result = await fetchData(props.title); 
         setRecipes(result);
       } catch (error) {
         console.error('Error:', error);
@@ -54,24 +53,30 @@ export default function Recipe({ props }) {
     fetchRecipes();
   }, [props.title]);
 
-  return (
+  // console.log(recipes);
+
+  return ( 
     <>
       {recipes.map((recipe, recipeIndex) => (
-        <div key={recipeIndex}>
-          <Typography component='h4' variant='h5' paragraph sx={{ fontFamily: 'Josefin Sans' }}>
-            {recipe[0]}
-          </Typography>
-          <Typography component='h5' variant='subtitle1' paragraph sx={{ fontFamily: 'Josefin Sans' }}>
-            Ingredients: {recipe[1]}
-          </Typography>
-          <Typography component='h5' variant='subtitle1' paragraph sx={{ fontFamily: 'Josefin Sans' }}>
-            Servings: {recipe[2]}
-          </Typography>
-          <Typography component='h5' variant='subtitle1' paragraph sx={{ fontFamily: 'Josefin Sans' }}>
-            Instructions: {recipe[3]}
-          </Typography>
-          <hr />
-        </div>
+        <Card elevation={5} sx={{
+          marginY:'30px',
+          padding: "20px",
+        }}>
+          <div key={recipeIndex}>
+            <Typography component='h4' variant='h5' paragraph sx={{ fontFamily: 'Raleway', fontWeight: 'bold', fontSize: '30px' }}>
+              {recipe[0]}
+            </Typography>
+            <Typography component='h5' variant='subtitle1' paragraph sx={{ fontFamily: 'Raleway', fontWeight: 'bold' }}>
+              Ingredients: {recipe[1]}
+            </Typography>
+            <Typography component='h5' variant='subtitle1' paragraph sx={{ fontFamily: 'Raleway', fontWeight: 'bold'  }}>
+              Servings: {recipe[2]}
+            </Typography>
+            <Typography component='h5' variant='subtitle1' paragraph sx={{ fontFamily: 'Raleway', fontWeight: 'bold'  }}>
+              Instructions: {recipe[3]}
+            </Typography>
+          </div>
+        </Card>
       ))}
     </>
   );

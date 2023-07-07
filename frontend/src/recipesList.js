@@ -1221,7 +1221,7 @@ const recipes = [
       "Eggplant and Chickpea Curry",
       "Mushroom and Spinach Lasagna",
       "Vegetable Pad Thai",
-    ],
+    ]
 ]
 
 export default recipes;

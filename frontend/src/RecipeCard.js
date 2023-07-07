@@ -10,7 +10,7 @@ const RecipeCard = ({ props }) => {
         sx={{
             fontFamily: 'Raleway',
             fontSize: '15%',
-            color: 'black'
+            color: 'black',
         }}>
         {props.title}
       </Typography>
