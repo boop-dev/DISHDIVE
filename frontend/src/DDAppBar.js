@@ -41,7 +41,7 @@ function DDAppBar({props}) {
         boxShadow: "none",
         top: '0px',
         marginBottom: '0',
-        position: 'sticky'
+        position: 'sticky',
     }}>
       <Container maxWidth="xl" sx={{marginTop: '7px', marginBottom: '7px'}}>
         <Toolbar disableGutters>
