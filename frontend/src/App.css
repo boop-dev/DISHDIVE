@@ -88,46 +88,19 @@ html{
   text-align:  center;
 }
 
-
-/* footer curve */
-.custom-shape-divider-top-1688251488 {
-  position: absolute;
-  left: 0;
-  width: 100%;
-  overflow: hidden;
-  line-height: 0;
+.AdvantageImg1{
+  border: none;
+  border-radius: 5%;
+  width: 21vw;
+  height: 18vw;
+  margin-left: 25%;
 }
 
-.custom-shape-divider-top-1688251488 svg {
-  position: relative;
-  display: block;
-  width: calc(142% + 1.3px);
-  height: 13vh;
-  rotate: 180deg;
+.AdvantageImg2{
+  border: none;
+  border-radius: 5%;
+  width: 21vw;
+  height: 18vw;
+  /* margin-left: 25%; */
 }
 
-.custom-shape-divider-top-1688251488 .shape-fill {
-  fill: #425F57;
-}
-
-
-
-/* top-box curve */
-.custom-shape-divider-top-1688339995 {
-  position: absolute;
-  left: 0;
-  width: 100%;
-  overflow: hidden;
-  line-height: 0;
-}
-
-.custom-shape-divider-top-1688339995 svg {
-  position: relative;
-  display: block;
-  width: calc(142% + 1.3px);
-  height: 177px;
-}
-
-.custom-shape-divider-top-1688339995 .shape-fill {
-  fill: #425F57;
-}

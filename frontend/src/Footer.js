@@ -22,7 +22,7 @@ const Footer = () => {
         <Typography component='h3' variant='h5' 
           sx={{
             color: 'white',
-            fontSize: '2.5vw',
+            fontSize: '300%',
             fontFamily: 'Cookie',
             }}>
           {title}
@@ -30,9 +30,9 @@ const Footer = () => {
         <br />
         <br />
 
-        {/* Footer is divided into a grid with two gridItems. One for the about section and the other for the links */}
+        {/* Footer is divided into a grid with two gridItems. One for the About section and the other for the links */}
         <Grid container spacing={27} wrap='nowrap'>
-          <Grid item xs={7}>
+          <Grid item xs={12} sm={7} >
             <Typography item component='h4' variant='h5' paragraph 
               sx={{
                 color: 'white',

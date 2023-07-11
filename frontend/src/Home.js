@@ -26,7 +26,7 @@ function Home() {
 
         <Grid container sx={{marginTop: '5%'}}>
 
-          <Grid item xs={5}>
+          <Grid item xs={12} sm={5}>
             <Typography sx={{
             fontFamily: 'Raleway',
             fontSize:'350%',
@@ -70,7 +70,7 @@ function Home() {
           </Button>
           </Grid>
 
-          <Grid item xs={7} sx={{position: 'relative', }}>
+          <Grid item xs={12} sm={7} sx={{position: 'relative', }}>
             <img src='images\vecteezy_cooking-and-kitchen-illustration-concept-on-white-background_11634379.jpg' alt='hero-vector' className='heroImage' />
           </Grid>
 
@@ -88,7 +88,7 @@ function Home() {
               fontFamily: 'Raleway',
               fontSize: '300%',
               fontWeight: 600,
-              color: '#425F57'
+              color: 'black'
             }}>
             Checkout these categories
           </Typography>
@@ -104,8 +104,43 @@ function Home() {
               ))}
           </Grid>
         </Container>
-
       </Box>
+
+      {/* Advantages section */}
+      <Container sx={{ marginY: '6vh'}}>
+        <Grid container spacing={6} justifyContent='flex-end'>
+          <Grid item sm={6} xs={12} alignContent="center" > 
+            <img src='images\pexels-sarah-chai-7262911.jpg' alt='advanImg1' className='AdvantageImg1'/>
+          </Grid>
+
+          <Grid item sm={6} xs={12} >
+            <Typography sx={{
+              fontFamily: 'Raleway',
+              fontWeight: 'bold',
+              fontSize: '300%',
+              paddingTop: '5vh'
+            }}>
+              Curated and detailed recipes that suit your taste.
+            </Typography>
+          </Grid>
+
+          <Grid item sm={6} xs={12} >
+            <Typography sx={{
+              fontFamily: 'Raleway',
+              fontWeight: 'bold',
+              fontSize: '300%',
+              paddingTop: '10vh',
+              textAlign: 'right'
+            }}>
+              Lots of variety to chooose from.
+            </Typography>
+          </Grid>
+
+          <Grid item sm={6} xs={12} >
+            <img src='images\pexels-vanessa-loring-5966431.jpg' alt='AdvanImg2' className='AdvantageImg2'/>
+          </Grid>
+        </Grid>
+      </Container>
 
       {/* Customer Review Section */}
       <Typography sx={{

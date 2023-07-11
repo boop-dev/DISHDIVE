@@ -9,11 +9,12 @@ export default function CustomerReviewCard ({ props }){
                 textAlign: 'left',
                 height: '90%',
                 width: 'auto',
-                borderRadius: '2%',
+                borderRadius: '5%',
                 backgroundColor: '#F2F3F7',
             }}>
                 <Typography sx={{
                     fontFamily: 'Raleway',
+                    fontSize: '120%',
                     fontWeight:'bold',
                 }}>
                     {props.name}
