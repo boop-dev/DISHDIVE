@@ -9,8 +9,9 @@ const RecipeCard = ({ props }) => {
       <Typography component='h4' variant='h5' paragraph
         sx={{
             fontFamily: 'Raleway',
-            fontSize: '15%',
-            color: 'black',
+            fontSize: 'auto',
+            color: '#425F57',
+            fontWeight: 600
         }}>
         {props.title}
       </Typography>

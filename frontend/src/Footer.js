@@ -4,7 +4,7 @@ import { Container, Grid, Typography, Box, Button } from '@mui/material';
 const Footer = () => {
   // Define the data for the footer
   const description = "Explore, Discover, and Connect through Food. Our platform is your gateway to a world of culinary inspiration. Discover a vast collection of carefully curated recipes from around the globe. Connect with a community of food enthusiasts, share your own recipes, and embark on a delicious journey. Let DishDive be your guide as you explore the art of cooking, one dish at a time.";
-  const title = "D I S H D I V E";
+  const title = "Flavorea";
 
   const columns = [['Instagram', 'Facebook', 'Twitter'], ['Privacy policy', 'Terms and conditions']]
 
@@ -14,7 +14,6 @@ const Footer = () => {
         backgroundColor: '#425F57',
         marginTop: 10,
         paddingTop: 10,
-        // position: 'absolute',
         bottom: 0,
         }}>
       <Container maxWidth={false} sx={{ maxWidth: '85%'}}>
@@ -23,8 +22,8 @@ const Footer = () => {
         <Typography component='h3' variant='h5' 
           sx={{
             color: 'white',
-            fontSize: '2vw',
-            fontFamily: 'Raleway',
+            fontSize: '2.5vw',
+            fontFamily: 'Cookie',
             }}>
           {title}
         </Typography>

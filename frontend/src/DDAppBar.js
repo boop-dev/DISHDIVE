@@ -42,6 +42,7 @@ function DDAppBar({props}) {
         top: '0px',
         marginBottom: '0',
         position: 'sticky',
+        zIndex: 99
     }}>
       <Container maxWidth="xl" sx={{marginTop: '7px', marginBottom: '7px'}}>
         <Toolbar disableGutters>
@@ -53,14 +54,14 @@ function DDAppBar({props}) {
             sx={{
               mr: 2,
               display: { xs: 'none', md: 'flex' },
-              fontFamily: 'Raleway',
+              fontFamily: 'Cookie',
               fontWeight: 400,
-              letterSpacing: '.3rem',
+              fontSize:'250%',
               color: 'inherit',
               textDecoration: 'none',
             }}
           >
-            DISHDIVE
+            Flavorea
           </Typography>
 
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
@@ -104,19 +105,19 @@ function DDAppBar({props}) {
             variant="h5"
             noWrap
             component="a"
-            href=""
+            href="/"
             sx={{
               mr: 2,
               display: { xs: 'flex', md: 'none' },
               flexGrow: 1,
-              fontFamily: 'monospace',
+              fontFamily: 'Pacifico',
               fontWeight: 700,
               letterSpacing: '.3rem',
               color: 'inherit',
               textDecoration: 'none',
             }}
           >
-            DISHDIVE
+            Flavorea
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
             {pages.map((page) => (
